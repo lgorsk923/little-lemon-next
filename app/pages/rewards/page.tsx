@@ -4,10 +4,10 @@ export default function Page() {
     return (
         <div className="flex min-h-screen flex-col justify-start bg-zinc-50 font-sans dark:bg-black">
             <Hero
-                title='Rewards'
+                title='Loyalty Rewards'
                 subtitle='Earn Perks with Every Visit'
                 text='Join our rewards program and enjoy exclusive offers and discounts.'
-                image='/bruschetta.png'
+                image='/rewards.jpeg'
                 alt='Bruschetta'
                 buttontrue={false}
             />

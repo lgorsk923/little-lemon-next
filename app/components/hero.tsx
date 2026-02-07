@@ -33,7 +33,7 @@ export function Hero({
                 <p>{text}</p>
                 {buttontrue && path && (
                     <Link href={path} >
-                        <Button variant="ghost" className="hero_button mt-3 mb-5">{buttonText}</Button>
+                        <Button variant="ghost" className="hero_button mt-3 rounded-2xl">{buttonText}</Button>
                     </Link>
                 )}
             </div>

@@ -7,9 +7,12 @@ export default function Page() {
                 title='Menu'
                 subtitle='Fresh, Seasonal Favorites'
                 text='Explore our Mediterranean-inspired menu crafted with fresh, locally sourced ingredients.'
-                image='/bruschetta.png'
-                alt='Bruschetta'
-                buttontrue={false}
+                image='/food.jpg'
+                alt='Mediterranean Food'
+                buttontrue={true}
+                imageWidth={375}
+                path="/pages/order"
+                buttonText="Order Now!"
             />
             <h1 className='text-5xl'>Menu</h1>
         </div>

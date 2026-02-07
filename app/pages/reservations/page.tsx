@@ -7,9 +7,10 @@ export default function Page() {
                 title='Reservations'
                 subtitle='Save Your Table'
                 text='Reserve a table for a relaxed, memorable meal at Little Lemon.'
-                image='/bruschetta.png'
-                alt='Bruschetta'
+                image='/restaurant-image.jpg'
+                alt='Restaurant Interior'
                 buttontrue={false}
+                imageWidth={350}
             />
             <h1 className='text-5xl'>Make a Reservation Today!</h1>
         </div>

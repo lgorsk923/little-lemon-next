@@ -140,6 +140,7 @@
 
   .hero__container {
     max-width: 600px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -209,8 +210,6 @@
   .hero_button:hover {
     background-color: #b89c14!important;
     color: black !important;
-  }
-  .hero_button:active {
     box-shadow: none;
   }
 }

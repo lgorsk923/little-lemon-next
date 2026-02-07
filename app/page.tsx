@@ -1,4 +1,5 @@
 import { Hero } from "./components/hero";
+import WeeklySpecials from "./components/home/specials-banner";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         buttonText='Make a Reservation'
         path='/pages/reservations'
       />
-      <h1 className='text-5xl'>Welcome to Little Lemon</h1>
+      <WeeklySpecials />
     </div>
   );
 }
