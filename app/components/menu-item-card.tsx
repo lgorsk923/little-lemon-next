@@ -11,22 +11,20 @@ import {
 import Image from "next/image"
 import Link from "next/link";
 
-interface CardProps {
+export interface CardProps {
+    key: number;
     image: string;
     title: string;
     price?: string;
     description: string;
-    buttontrue: boolean;
-    buttonText?: string;
-    path?: string;
 }
 
 
 export function SpecialsCard({
-    image, title, price, description, buttontrue, buttonText, path
+    image, title, price, description
 }: CardProps) {
     return (
-        <Card className="relative mx-auto w-full max-w-[300px] overflow-hidden bg-[#D9D9D9] pt-0">
+        <Card className="relative mx-auto flex h-[350px] w-[300px] overflow-hidden bg-[#D9D9D9] pt-0">
             <Image
                 src={image}
                 alt={title}
@@ -34,7 +32,7 @@ export function SpecialsCard({
                 height={400}
                 className="relative z-20 aspect-video w-full rounded-t-xl object-cover"
             />
-            <CardHeader>
+            <CardHeader className="flex-1 content-start">
                 {price && (
                     <CardAction className="-mt-1">
                         <Badge variant="ghost" className="items-start text-sm text-amber-500">{price}</Badge>
@@ -45,15 +43,6 @@ export function SpecialsCard({
                     {description}
                 </CardDescription>
             </CardHeader>
-            {buttontrue && path && (
-                <CardFooter>
-                    <Link href={path}>
-                        <Button variant="outline" className="w-full">
-                            {buttonText}
-                        </Button>
-                    </Link>
-                </CardFooter>
-            )}
         </Card>
     )
 }

@@ -1,5 +1,7 @@
 import { Hero } from "./components/hero";
+import ReviewsBanner from "./components/home/reviews-banner";
 import WeeklySpecials from "./components/home/specials-banner";
+import WhoAreWe from "./components/home/who-are-we-banner";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
         path='/pages/reservations'
       />
       <WeeklySpecials />
+      <WhoAreWe />
+      <ReviewsBanner />
     </div>
   );
 }
