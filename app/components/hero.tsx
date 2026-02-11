@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -26,8 +25,15 @@ export function Hero({
     imageClassName, imageWidth = 200, imageHeight = 225,
 }: HeroProps) {
     return (
-        <section className={cn("hero items-center justify-center text-white px-5 py-10", className)}>
-            <div className={cn("hero__container", contentClassName)}>
+        <section
+            className={cn("hero items-center justify-center text-white px-5 py-10", className)}
+        >
+            <div
+                className="hero__bg"
+                style={{ backgroundImage: `url(${image})` }}
+                aria-hidden="true"
+            />
+            <div className={cn("hero__container hero__content", contentClassName)}>
                 <h1 className="hero__title">{title}</h1>
                 <h5 className="hero__subtitle">{subtitle}</h5>
                 <p>{text}</p>
@@ -37,7 +43,6 @@ export function Hero({
                     </Link>
                 )}
             </div>
-            <Image className={cn("rounded-xl", imageClassName)} src={image} alt={alt} width={imageWidth} height={imageHeight} />
         </section >
     );
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { NavbarExpanded } from "./components/navbar";
+import { NavbarExpanded, NavBarMobile } from "./components/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +29,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavbarExpanded />
-        {children}
+        <NavBarMobile>
+          {children}
+        </NavBarMobile>
+        <div className="hidden md:block">
+          {children}
+        </div>
       </body>
     </html>
   );

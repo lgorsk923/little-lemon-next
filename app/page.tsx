@@ -10,8 +10,9 @@ export default function Home() {
         title='Little Lemon'
         subtitle='Chicago, IL'
         text='We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.'
-        image='/bruschetta.png'
-        alt='Bruschetta'
+        image='/exterior.webp'
+        imageWidth={400}
+        alt='Exterior of our restaurant'
         buttontrue={true}
         buttonText='Make a Reservation'
         path='/pages/reservations'

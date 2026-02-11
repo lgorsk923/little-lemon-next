@@ -136,11 +136,29 @@
     box-sizing: border-box;
     width: 100%;
     padding: 2rem 1.25rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero__bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: 0;
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 1;
   }
 
   .hero__container {
-    max-width: 600px;
-    min-height: 300px;
+    max-width: 900px;
+    min-height: 420px;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -166,9 +184,8 @@
     font-family: "Karla-Medium", sans-serif;
     font-size: 18px;
     color: white;
-    width: 75%;
+    width: 100%;
   }
-
 
   @media screen and (max-width: 480px) {
     .hero {
@@ -212,4 +229,25 @@
     color: black !important;
     box-shadow: none;
   }
+}
+
+/* Mobile sidebar customization */
+[data-mobile="true"] {
+  height: 35vh !important;
+  top: 0;
+  right: 0;
+  bottom: auto !important;
+  border-radius: 0 1rem 1rem 0 !important;
+  background-color: #94c0b2 !important;
+  overflow: hidden !important;
+}
+
+/* Hide sheet overlay for sidebar */
+[data-mobile="true"] ~ [data-radix-dialog-overlay] {
+  display: none !important;
+}
+
+/* Ensure sidebar background is green */
+[data-sidebar="sidebar"][data-mobile="true"] {
+  background-color: #94c0b2 !important;
 }
