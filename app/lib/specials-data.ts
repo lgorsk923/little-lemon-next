@@ -1,5 +1,5 @@
 
-import { CardProps } from "../components/menu-item-card"
+import { CardProps } from "../components/specials-card"
 export const specialsData: CardProps[] = [
     {
         key: 1,
