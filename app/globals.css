@@ -237,13 +237,15 @@
 
 /* Mobile sidebar customization */
 [data-mobile="true"] {
-  height: 35vh !important;
+  /* increase height so menu items fit and allow scrolling when needed */
+  height: 50vh !important;
+  max-height: 95vh !important;
   top: 0;
   right: 0;
   bottom: auto !important;
   border-radius: 0 1rem 1rem 0 !important;
-  background-color: #94c0b2 !important;
-  overflow: hidden !important;
+  background-color: #d4d9d4 !important;
+  overflow: auto !important;
 }
 
 /* Hide sheet overlay for sidebar */
@@ -253,5 +255,5 @@
 
 /* Ensure sidebar background is green */
 [data-sidebar="sidebar"][data-mobile="true"] {
-  background-color: #94c0b2 !important;
+  background-color: #d4d9d4 !important;
 }

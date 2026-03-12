@@ -15,7 +15,7 @@ import { karla } from "../fonts";
 import { useState } from "react";
 export function NavbarExpanded() {
     return (
-        <div className={`hidden md:flex pt-4 px-5 items-center justify-between gap-3 lg:gap-x-5 ${karla.className} font-bold text-lg text-stone-950 bg-neutral-100`}>
+        <div className={`hidden lg:flex pt-4 px-5 items-center justify-between gap-3 lg:gap-x-5 ${karla.className} font-bold text-lg text-stone-950 bg-neutral-100`}>
             <Link href="/" className="text-2xl font-bold text-green-700">
                 <Image src="/name_and_logo.png" alt="Little Lemon Logo" width={225} height={225} />
             </Link>
@@ -43,16 +43,16 @@ export function NavBarMobile({ children }: { children: React.ReactNode }) {
     const [open, setOpen] = useState(false)
 
     return (
-        <SidebarProvider open={open} onOpenChange={setOpen} className='md:hidden'>
+        <SidebarProvider open={open} onOpenChange={setOpen} className='lg:hidden'>
             <AppSidebar onNavigate={() => setOpen(false)} />
             <SidebarInset>
-                <header className="flex h-16 shrink-0 items-center gap-2 px-4 bg-neutral-100">
-                    <SidebarTrigger className="-ml-1" />
+                <header className="flex h-16 md:h-20 shrink-0 items-center gap-2 px-4 md:px-8 bg-neutral-100">
+                    <SidebarTrigger className="-ml-1 size-6 md:size-8" />
                     <Separator
                         orientation="vertical"
                         className="mr-2 data-[orientation=vertical]:h-4"
                     />
-                    <Image src="/name_and_logo.png" alt="Little Lemon Logo" width={200} height={200} />
+                    <Image src="/name_and_logo.png" className="md:mx-auto md:w-[250px] md:h-auto" alt="Little Lemon Logo" width={200} height={200} />
                 </header>
                 <div className="flex-1">
                     {children}

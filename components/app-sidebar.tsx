@@ -58,11 +58,11 @@ export function AppSidebar({ onNavigate, ...props }: React.ComponentProps<typeof
   }
 
   return (
-    <Sidebar {...props} className="bg-[94c0b2]">
-      <SidebarHeader className="flex items-center justify-center bg-[94c0b2]">
+    <Sidebar {...props} className="bg-[#d4d9d4]">
+      <SidebarHeader className="flex items-center justify-center bg-[#d4d9d4]">
         <Image src="/name_and_logo.png" alt="Little Lemon Logo" className='rounded-full' width={200} height={200} />
       </SidebarHeader>
-      <SidebarContent className='px-6 text-white bg-[94c0b2]'>
+      <SidebarContent className='px-6 text-[#506e5a] bg-[#d4d9d4]'>
         {/* We create a SidebarGroup for each parent. */}
         {data.navMain.map((group) => (
           <Link

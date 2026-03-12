@@ -3,7 +3,6 @@
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { Menu } from "lucide-react"
-import { PanelLeftIcon } from "lucide-react"
 import { Slot } from "radix-ui"
 
 import { useIsMobile } from "@/hooks/use-mobile"
