@@ -4,12 +4,12 @@ import { cn } from "@/lib/utils";
 
 interface HeroProps {
     title: string;
-    subtitle: string;
-    text: string;
-    image: string;
-    alt: string;
+    subtitle?: string;
+    text?: string;
+    image?: string;
+    alt?: string;
     path?: string;
-    buttontrue: boolean;
+    buttonTrue: boolean;
     buttonText?: string;
     className?: string;
     contentClassName?: string;
@@ -20,7 +20,7 @@ interface HeroProps {
 
 export function Hero({
     title, subtitle, text, image, alt, path,
-    buttontrue, buttonText,
+    buttonTrue, buttonText,
     className, contentClassName,
     imageClassName, imageWidth = 200, imageHeight = 225,
 }: HeroProps) {
@@ -37,9 +37,9 @@ export function Hero({
                 <h1 className="hero__title">{title}</h1>
                 <h5 className="hero__subtitle">{subtitle}</h5>
                 <p>{text}</p>
-                {buttontrue && path && (
+                {buttonTrue && path && (
                     <Link href={path} >
-                        <Button variant="ghost" className="hero_button mt-1 md:mt-3 rounded-2xl">{buttonText}</Button>
+                        <Button variant="ghost" className="hero_button md:mt-4 rounded-2xl">{buttonText}</Button>
                     </Link>
                 )}
             </div>

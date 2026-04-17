@@ -1,6 +1,6 @@
 export interface ReviewInfo {
     key: number;
-    image: string;
+    image?: string;
     name: string;
     text?: string;
     rating: number;

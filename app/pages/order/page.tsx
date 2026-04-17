@@ -10,7 +10,7 @@ export default function Page() {
                 image='/takeout-order.jpeg'
                 alt='Takeout Food'
                 imageWidth={275}
-                buttontrue={true}
+                buttonTrue={true}
                 path='/pages/reservations'
                 buttonText='Make a reservation'
             />

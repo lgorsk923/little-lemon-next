@@ -9,7 +9,7 @@ export default function Page() {
                 text='Join our rewards program and enjoy exclusive offers and discounts.'
                 image='/rewards.jpeg'
                 alt='Bruschetta'
-                buttontrue={false}
+                buttonTrue={false}
             />
             <h1 className='text-5xl'>Join our Rewards Program!</h1>
         </div>

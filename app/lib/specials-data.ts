@@ -1,6 +1,6 @@
 
-import { CardProps } from "../components/specials-card"
-export const specialsData: CardProps[] = [
+import { SpecialsCard } from "../components/specials-card"
+export const specialsData: SpecialsCard[] = [
     {
         key: 1,
         title: "Greek Salad",

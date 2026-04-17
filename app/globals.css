@@ -156,7 +156,7 @@
   }
 
   .hero__container {
-    max-width: 900px;
+    max-width: 1200px;
     min-height: 100px;
     flex: 1;
     display: flex;
@@ -219,6 +219,17 @@
       margin: 0.5rem 0;
     }
   }
+
+  /* Medium and up: tighten title/subtitle spacing and ensure button spacing */
+  @media screen and (min-width: 768px) {
+    .hero__container {
+      gap: 0.5rem;
+    }
+
+    .hero__container p {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 @layer utilities {
@@ -226,7 +237,6 @@
     background-color: #f3cd17;
     color: black;
     box-shadow: 0 6px 0 rgba(0, 0, 0, 0.45);
-    margin: 0 !important;
   }
   .hero_button:hover {
     background-color: #b89c14!important;

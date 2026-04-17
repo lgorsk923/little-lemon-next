@@ -9,7 +9,7 @@ export default function Page() {
                 text='Reserve a table for a relaxed, memorable meal at Little Lemon.'
                 image='/restaurant-image.jpg'
                 alt='Restaurant Interior'
-                buttontrue={false}
+                buttonTrue={false}
                 imageWidth={350}
             />
             <h1 className='text-5xl'>Make a Reservation Today!</h1>

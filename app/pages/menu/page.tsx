@@ -9,7 +9,7 @@ export default function Page() {
                 text='Explore our Mediterranean-inspired menu crafted with fresh, locally sourced ingredients.'
                 image='/food.jpg'
                 alt='Mediterranean Food'
-                buttontrue={true}
+                buttonTrue={true}
                 imageWidth={375}
                 path="/pages/order"
                 buttonText="Order Now!"

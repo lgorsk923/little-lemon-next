@@ -13,12 +13,18 @@ export default function Home() {
         image='/exterior.webp'
         imageWidth={400}
         alt='Exterior of our restaurant'
-        buttontrue={true}
+        buttonTrue={true}
         buttonText='Make a Reservation'
         path='/pages/reservations'
       />
       <WeeklySpecials />
-      <WhoAreWe />
+      <Hero
+        title='Who Are We?'
+        text='Little Lemon is a family-owned restaurant just outside downtown Chicago. All of our ingredients are locally grown and prepared by our two excellent chefs Adrian and Mario.'
+        buttonTrue={true}
+        buttonText='Learn More'
+        path='/pages/about'
+      />
       <ReviewsBanner />
     </div>
   );
