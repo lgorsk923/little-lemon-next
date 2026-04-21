@@ -33,7 +33,7 @@ export default function RootLayout({
         <NavBarMobile>
           {children}
         </NavBarMobile>
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           {children}
         </div>
         <Footer />

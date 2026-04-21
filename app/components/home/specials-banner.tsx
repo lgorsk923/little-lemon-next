@@ -6,9 +6,9 @@ import MobileViewCarousel from "../mobile-view-carousel";
 export default function WeeklySpecials() {
 
     return (
-        <div className='py-3 md:py-6 md:px-4 bg-[#F8F9FA]'>
+        <div className='pt-0 pb-5 lg:px-3 xl:px-50 lg:py-10 xl:py-10 bg-[#F8F9FA]'>
             <div className='grid grid-cols-5 items-start gap-0 p-3'>
-                <h1 className={`text-3xl col-span-4 md:text-6xl md:col-span-3 justify-self-start ${markazi.className}`}>Weekly Specials</h1>
+                <h1 className={`text-5xl col-span-5 md:text-6xl md:col-span-5 justify-self-start ${markazi.className}`}>Weekly Specials</h1>
             </div>
             <MobileViewCarousel cards={specialsData} />
             <Link href='/pages/order' className='flex justify-end mt-5 mb-3 mr-3 md:mt-6'>
